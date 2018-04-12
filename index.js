@@ -9,13 +9,15 @@ module.exports = {
         ecmaVersion: 2018,
         sourceType: 'module'
     },
-    plugins: ["html"],
+    plugins: ['html'],
     rules: {
         'arrow-body-style': 'off',
         'arrow-parens': 0,
+        'consistent-return': 'warn',
         'eqeqeq': 'off',
         'generator-star-spacing': 0,
-        'import/extensions': 'off',
+        'import/extensions': ['error', 'ignorePackages'],
+        'import/no-extraneous-dependencies': 'off',
         'import/no-unresolved': 'off',
         'indent': ['error', 4, { SwitchCase: 1 }],
         'max-len': ['warn', { code: 200, tabWidth: 4, ignoreStrings: true, ignoreTemplateLiterals: true }],
