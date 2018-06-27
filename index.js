@@ -30,7 +30,8 @@ module.exports = {
         'no-restricted-syntax': 'off',
         'no-undef': 'off',
         'object-shorthand': ['error', 'always'],
-        'prefer-const': 'off',
+        'prefer-const': ['warn', { destructuring: 'all' }],
+        'prefer-destructuring': 'warn',
         'semi': ['error', 'always', { omitLastInOneLineBlock: true }],
     },
 };
