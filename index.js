@@ -1,15 +1,14 @@
 module.exports = {
-    extends: 'airbnb-base',
+    extends: [
+        'plugin:vue/essential',
+        '@vue/airbnb',
+    ],
     env: {
-        browser: true,
-        worker: true,
+        node: true,
     },
-    parser: 'babel-eslint',
     parserOptions: {
-        ecmaVersion: 2018,
-        sourceType: 'module'
+        parser: 'babel-eslint',
     },
-    plugins: ['html'],
     rules: {
         'arrow-body-style': 'off',
         'arrow-parens': 0,
