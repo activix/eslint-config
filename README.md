@@ -1,6 +1,6 @@
 # eslint-config
 
-This package provides Activix's JS ESLint config.
+This package provides Activix's ESLint config.
 
 ## Usage
 

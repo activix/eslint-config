@@ -1,7 +1,7 @@
 {
     "name": "@activix/eslint-config",
-    "version": "2.1.0",
-    "description": "Activix's JS ESLint config, following our styleguide",
+    "version": "2.1.1",
+    "description": "Activix's ESLint config, following our styleguide.",
     "main": "index.js",
     "repository": {
         "type": "git",
@@ -20,6 +20,7 @@
     "homepage": "https://github.com/activix/eslint-config",
     "dependencies": {
         "@vue/eslint-config-airbnb": "^3.0.0",
-        "@vue/cli-plugin-eslint": "^3.0.0"
+        "babel-eslint": "^8.2.6",
+        "eslint-plugin-vue": "^4.7.1"
     }
 }
