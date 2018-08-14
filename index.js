@@ -1,11 +1,11 @@
 module.exports = {
-    extends: [
-        'plugin:vue/essential',
-        '@vue/airbnb',
-    ],
     env: {
         node: true,
     },
+    extends: [
+        'plugin:vue/recommended',
+        '@vue/airbnb',
+    ],
     parserOptions: {
         parser: 'babel-eslint',
     },
@@ -27,10 +27,26 @@ module.exports = {
         'no-plusplus': 'off',
         'no-prototype-builtins': 'off',
         'no-restricted-syntax': 'off',
+        'no-shadow': 'off',
         'no-undef': 'off',
         'object-shorthand': ['error', 'always'],
         'prefer-const': ['warn', { destructuring: 'all' }],
         'prefer-destructuring': 'warn',
         'semi': ['error', 'always', { omitLastInOneLineBlock: true }],
+        'vue/attributes-order': ['warn', { order: ['GLOBAL', 'DEFINITION', 'UNIQUE', 'OTHER_ATTR', 'BINDING', 'EVENTS', 'LIST_RENDERING', 'CONTENT', 'RENDER_MODIFIERS', 'TWO_WAY_BINDING', 'CONDITIONALS'] }],
+        'vue/html-closing-bracket-newline': ['error', { multiline: 'always' }],
+        'vue/html-closing-bracket-spacing': ['error'],
+        'vue/html-indent': ['error', 4],
+        'vue/max-attributes-per-line': ['error', { singleline: 2 }],
+        'vue/prop-name-casing': ['error'],
+        'vue/script-indent': ['error', 4, { baseIndent: 1, switchCase: 1 }],
     },
+    overrides: [
+        {
+            files: ['*.vue'],
+            rules: {
+                indent: 'off',
+            },
+        },
+    ],
 };
