@@ -48,5 +48,11 @@ module.exports = {
                 indent: 'off',
             },
         },
+        {
+            files: ['!*.vue'],
+            rules: {
+                'vue/script-indent': 'off',
+            },
+        },
     ],
 };
