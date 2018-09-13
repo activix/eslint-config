@@ -4,7 +4,7 @@ module.exports = {
     },
     extends: [
         'plugin:vue/recommended',
-        '@vue/airbnb',
+        'airbnb-base',
     ],
     parserOptions: {
         parser: 'babel-eslint',
