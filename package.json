@@ -1,6 +1,6 @@
 {
     "name": "@activix/eslint-config",
-    "version": "2.3.0",
+    "version": "3.0.1",
     "description": "Activix's ESLint config, following our styleguide.",
     "main": "index.js",
     "repository": {
